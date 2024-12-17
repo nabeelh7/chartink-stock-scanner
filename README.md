@@ -4,17 +4,40 @@ A Python automation project to scan high-momentum stocks on Chartink and add the
 
 🚀 **Automates high-momentum stock scanning and TradingView watchlist creation**.
 
-## Overview
-This Python script scans top-performing stocks within the first 15 minutes of market opening and adds them to TradingView, helping traders capture quick gains.
+# Chartink Stock Scanner Automation 🚀
 
-## Features
-- Automates Chartink scanners based on custom criteria.
-- Sorts stocks by **Volume** and extracts the top results.
-- Adds stocks to a TradingView watchlist automatically.
+## **Overview**
+This Python project automates stock scanning on **Chartink** and adds high-momentum stocks to a **TradingView** watchlist. It helps traders capture quick gains within the first 15 minutes of market opening.
 
-## Technologies Used
-- Python, Selenium, Subprocess, ActionChains
+---
 
-![TradingView](assets/tradingview_watchlist.png)
+## **Problem**
+Manually scanning and transferring stocks wastes time. This project:
+- Runs three **Chartink scanners** simultaneously.
+- Sorts stocks by **Volume**.
+- Adds the top 15 stocks (5 from each scanner) to TradingView automatically.
 
-**[View Project Code](https://github.com/yourusername/chartink-stock-scanner)**
+---
+
+## **Features**
+- 🕒 **Speed**: Executes scans and updates watchlist within 2 minutes.
+- 🔎 **Automation**: Reduces manual effort in scanning and adding stocks.
+- 📊 **Integration**: Supports Chartink scanners and TradingView.
+
+---
+
+## **Technologies Used**
+- **Python**
+- **Selenium** (Web Automation)
+- **Subprocess**
+- **ActionChains** (Selenium for mouse actions)
+
+---
+
+## **Setup**
+
+### Prerequisites:
+- Install Python 3 and ChromeDriver.
+- Install required libraries:
+   ```bash
+   pip install selenium pyperclip
